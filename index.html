@@ -7,25 +7,22 @@
       content="Rocklife! - association loi 1901, organisation de concerts de rock dans toute la France. Réservez vos places dès aujourd'hui !"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0e51eb6f5f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
-    <header class="container-fluid">
-      <nav class="navbar navbar-expand-md sticky-top header">
+    <nav class="navbar navbar-expand-md navbar-light header">
+      <div class="container-fluid">
         <h1 class="navbar-brand top-title">Golfamily!</h1>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -38,35 +35,140 @@
               <a href="#section2" class="nav-link">Le parcours</a>
             </li>
             <li class="nav-item">
-              <a href="#section3" class="nav-link">Evenements</a>
+              <a href="evenements.html" class="nav-link">Evenements</a>
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <section class="container-fluid section1">
-      <p class="introduction">
-        Découvrez le golf sur notre parcours perdu entre terre et mer <br />
-        à 10 minutes de La Rochelle <br />
-      </p>
-      <a href="#section2">En savoir plus</a>
-    </section>
-    <section class="container-fluid" id="section2">
-      <div class="row row-cols-md-2">
-        <div class="col">
-          <p class="">
-            Golfamily à été créé dans le but de faire découvrir le golf au grand
-            public à un prix très accessible. Depuis 2010 nous mettons tout en
-            oeuvre pour vous offrir la meilleure experience possible avec toute
-            l'équipe du golf.
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+      <section class="section1 d-flex align-content-center shadow-lg rounded">
+        <div class="container main-text">
+          <p class="introduction">
+            Découvrez le golf sur notre parcours perdu entre terre et mer
+            <br />
+            à 10 minutes de La Rochelle <br />
+
+            <a class="btn btn-success" href="#section2">En savoir plus</a>
           </p>
         </div>
-        <div class="col d-flex justify-content-center">
-          <span>Qui sommes nous ?</span>
+      </section>
+      <div class="container">
+        <section class="row mt-5" id="section2">
+          <div class="col text-center">
+            <h2 class="p-2 title-md">Qui somme-nous ?</h2>
+            <p class="basic-text underline pb-5">
+              L'association <strong>Golfamily</strong> a été créée en 2005 avec
+              pour objectif de promouvoir le golf à travers des évènements
+              caritatifs dans toute la France.<br />
+              L'association compte aujourd'hui plus de 800 membres et a déja
+              organisé plus d'une centaine de compétitions.<br />
+              <strong>Golfamily</strong> reverse tous ses bénéfices dans le but
+              de donner un accès aux activités sportives aux plus démunis.
+            </p>
+            <div class="row">
+              <div class="col">
+                <h2 class="title-md">Les membres du bureau</h2>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-4 pt-3">
+                  <img
+                    src="img/portrait.png"
+                    alt=""
+                    class="rounded-circle img-fluid mb-2"
+                  />
+                  <span class="basic-text fw-bold d-block">Président</span>
+                  <p class="basic-text underline">Luc Lejard</p>
+                </div>
+                <div class="col-6 col-md-4 pt-3">
+                  <img
+                    src="img/portrait.png"
+                    alt=""
+                    class="rounded-circle img-fluid mb-2"
+                  />
+                  <span class="basic-text fw-bold d-block">Vice-Président</span>
+                  <p class="basic-text underline">Vincent Lejard</p>
+                </div>
+                <div class="col-6 col-md-4 pt-3">
+                  <img
+                    src="img/portrait.png"
+                    alt=""
+                    class="rounded-circle img-fluid mb-2"
+                  />
+                  <span class="basic-text fw-bold d-block">Directeur sportif</span>
+                  <p class="basic-text underline">Thomas Lejard</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-md-block pt-4">
+            <img
+              src="img/illustration.png"
+              class="img-fluid mt-2"
+              style="float: right"
+              alt="Le golfeur"
+            />
+          </div>
+        </section>
+        <section class="row mt-5">
+          <div class="col text-center">
+            <h2 class="mb-4">Découvrir le golf</h2>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6 p-5 text-center">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/gJWCcqrTGkM"
+                ></iframe>
+              </div>
+              </p>
+            </div>
+            <div class="col-12 col-lg-6 text-center pt-0 pt-lg-5">
+              <p class="basic-text">Venez nous rencontrer sur une de nos manifestations ! <br>
+              Notre équipe sera là pour vous accueilir et vous faire découvrir le golf dans la bonne humeur. <br>
+              Apprenez aux côtés des nos coachs professionnels <br>
+            Consultez le <a href="evenements.html" target="_blank" style="text-decoration: none;">calendrier des évènements</a> proches de chez vous</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="container-fluid footer d-flex justify-content-evenly mt-3">
+      <ul class="list-unstyled">
+        <li>Actualités</li>
+        <li>Nous Rejoindre</li>
+        <li>Tarifs</li>
+        <li>Nous contacter</li>
+      </ul>
+
+      <div class="text-center">
+        <span>Suivez-nous sur les réseaux</span>
+        <div>
+      <a href="http://facebook.com" target="_blank" style="color: black;" title="Facebook">
+        <i class="fab fa-facebook-square fa-2x"></i>
+      </a> 
+      <a href="http://instagram.com" target="_blank" style="color: black;" title="Instagram">
+        <i class="fab fa-instagram-square fa-2x"></i>
+      </a>
+      <a href="http://twitter.com" target="_blank" style="color: black;" title="Twitter">
+        <i class="fab fa-twitter-square fa-2x"></i>
+      </a>
         </div>
       </div>
-    </section>
-    <section></section>
+    </footer>
 
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
