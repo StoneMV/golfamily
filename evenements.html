@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Rocklife! - association loi 1901, organisation de concerts de rock dans toute la France. Réservez vos places dès aujourd'hui !"
+      content="Association Golfamily - Calendrier des évènements 2021"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -20,6 +20,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Header et navbar -->
     <nav
       class="
         navbar navbar-expand-md navbar-light
@@ -35,11 +36,11 @@
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
+        data-bs-target="#navbarMenu"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse menu" id="navbarMenu">
         <ul class="navbar-nav text-center">
           <li class="nav-item">
             <a href="index.html" class="nav-link">L'association</a>
@@ -57,22 +58,49 @@
       </div>
     </nav>
 
-    <div class="container">
-      <h2 class="mt-3">Calendrier des évènements</h2>
-      <p>
-        L'inscription à un évènement donne accès aux activités de la journée, au
-        repas sur place le midi ainsi qu'au cocktail de remise des prix. <br />
-        Les évènements <img src="img/target.svg" alt="Target" /> Classement sont
-        réservés aux licenciés FFgolf <br />
-      </p>
-    </div>
+    <!-- Calendrier des evenements  -->
 
-    <!-- Events Calendar  -->
+    <div class="container">
+      <div class="row">
+        <div class="col col-12 col-lg-6">
+          <h2 class="mt-3">Calendrier des évènements - été 2021</h2>
+          <p>
+            L'inscription à un évènement donne accès aux activités de la
+            journée, au repas sur place le midi ainsi qu'au cocktail de remise
+            des prix. <br />
+            Les évènements <img src="img/target.svg" alt="Target" /> Classement
+            sont réservés aux licenciés FFgolf <br />
+          </p>
+        </div>
+        <div class="col col-12 col-lg-6 pt-3">
+          <form class="d-flex flex-column text-center">
+            <label for="email" class="form-label"
+              >Inscrivez-vous à notre newsletter pour rester informer des
+              derniers évènements et actualités</label
+            >
+            <div class="d-flex justify-content-center">
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                aria-describedby="email"
+                class="form-control"
+                placeholder="Entrez votre adresse e-mail"
+                style="max-width: 400px"
+              />
+              <button type="submit" class="btn btn-success">Inscription</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <section class="container-fluid">
       <div class="container">
+        <!-- Evenements de juin -->
+
         <div class="row">
           <h2 class="underline my-3">Juin</h2>
-          <div class="col col-md-4 col-xl-2">
+          <div class="col col-xl-3 mt-3 mt-sm-0">
             <div class="card">
               <img
                 class="card-img-top p-1"
@@ -80,170 +108,266 @@
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Golf Bluegreen Rochefort-océan</h5>
+                <h5 class="card-title">Rochefort-océan</h5>
                 <ul class="list-unstyled">
                   <li><img src="img/calendar-icon.svg" alt="" /> 15/06/2021</li>
                   <li>
                     <img src="img/target.svg" alt="Target" />
-                    Compétition de classement
+                    Classement
+                  </li>
+                  <li>
+                    <img src="img/position.svg" alt="Target" />
+                    <a
+                      href="https://goo.gl/maps/CqQ7yCj1oGWzxyqg8"
+                      target="_blank"
+                      >Localiser
+                    </a>
                   </li>
                 </ul>
-                <a href="#" class="btn btn-primary">Réserver</a>
+                <button class="btn btn-primary">Réserver</button>
               </div>
             </div>
           </div>
-          <div class="col col-md-4 col-xl-2">
+          <div class="col col-xl-3 mt-3 mt-sm-0">
             <div class="card">
               <img
                 class="card-img-top p-1"
-                src="img/rochefort.jpg"
+                src="img/marsilly.jpg"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Golf de la Prée - Marsilly</h5>
+                <h5 class="card-title">Marsilly</h5>
                 <ul class="list-unstyled">
-                  <li><img src="img/calendar-icon.svg" alt="" /> 15/06/2021</li>
+                  <li><img src="img/calendar-icon.svg" alt="" /> 19/06/2021</li>
                   <li>
                     <img src="img/target.svg" alt="Target" />
-                    Compétition de classement
+                    Classement
+                  </li>
+                  <li>
+                    <img src="img/position.svg" alt="Target" />
+                    <a
+                      href="https://goo.gl/maps/rnp3Xt38PoUjzbf76"
+                      target="_blank"
+                      >Localiser
+                    </a>
                   </li>
                 </ul>
                 <a href="#" class="btn btn-secondary disabled">Complet</a>
               </div>
             </div>
           </div>
+          <div class="col col-xl-3 mt-3 mt-sm-0">
+            <div class="card">
+              <img
+                class="card-img-top p-1"
+                src="img/nantes.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nantes</h5>
+                <ul class="list-unstyled">
+                  <li><img src="img/calendar-icon.svg" alt="" /> 25/06/2021</li>
+                  <li>
+                    <img src="img/loisir.svg" alt="Target" />
+                    Loisir
+                  </li>
+                  <li>
+                    <img src="img/position.svg" alt="Target" />
+                    <a
+                      href="https://g.page/golf-club-de-nantes?share"
+                      target="_blank"
+                      >Localiser
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Réserver</a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Evenements de Juillet  -->
+
         <div class="row">
           <h2 class="underline my-3">Juillet</h2>
-          <div class="col col-md-4 col-xl-2">
+          <div class="col col-xl-3 mt-3 mt-sm-0">
             <div class="card">
               <img
                 class="card-img-top p-1"
-                src="img/rochefort.jpg"
+                src="img/biarritz.jpg"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Golf Bluegreen Rochefort-océan</h5>
+                <h5 class="card-title">Biarritz</h5>
                 <ul class="list-unstyled">
-                  <li><img src="img/calendar-icon.svg" alt="" /> 15/06/2021</li>
+                  <li><img src="img/calendar-icon.svg" alt="" /> 08/07/2021</li>
                   <li>
                     <img src="img/target.svg" alt="Target" />
-                    Compétition de classement
+                    Classement
+                  </li>
+                  <li>
+                    <img src="img/position.svg" alt="Target" />
+                    <a
+                      href="https://goo.gl/maps/SbDBp3ksdLvDYASSA"
+                      target="_blank"
+                      >Localiser
+                    </a>
+                  </li>
+                </ul>
+                <button class="btn btn-primary">Réserver</button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-xl-3 mt-3 mt-sm-0">
+            <div class="card">
+              <img
+                class="card-img-top p-1"
+                src="img/lyon.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lyon Tassin</h5>
+                <ul class="list-unstyled">
+                  <li><img src="img/calendar-icon.svg" alt="" /> 16/07/2021</li>
+                  <li>
+                    <img src="img/target.svg" alt="Target" />
+                    Classement
+                  </li>
+                  <li>
+                    <img src="img/position.svg" alt="Target" />
+                    <a
+                      href="https://goo.gl/maps/JnRvjgP9gjkjfHE58"
+                      target="_blank"
+                      >Localiser
+                    </a>
                   </li>
                 </ul>
                 <a href="#" class="btn btn-primary">Réserver</a>
               </div>
             </div>
           </div>
-          <div class="col col-md-4 col-xl-2">
+          <div class="col col-xl-3 mt-3 mt-sm-0">
             <div class="card">
               <img
                 class="card-img-top p-1"
-                src="img/rochefort.jpg"
+                src="img/bordeaux.jpg"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Golf de la Prée - Marsilly</h5>
+                <h5 class="card-title">Bordeaux-Lac</h5>
                 <ul class="list-unstyled">
-                  <li><img src="img/calendar-icon.svg" alt="" /> 15/06/2021</li>
+                  <li><img src="img/calendar-icon.svg" alt="" /> 24/07/2021</li>
                   <li>
-                    <img src="img/target.svg" alt="Target" />
-                    Compétition de classement
+                    <img src="img/loisir.svg" alt="Target" />
+                    Loisir
+                  </li>
+                  <li>
+                    <img src="img/position.svg" alt="Target" />
+                    <a
+                      href="https://goo.gl/maps/TtfLjX9kBKkZ8oKWA"
+                      target="_blank"
+                      >Localiser
+                    </a>
                   </li>
                 </ul>
-                <a href="#" class="btn btn-secondary disabled">Complet</a>
+                <a href="#" class="btn btn-primary">Réserver</a>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Evenements du mois d'aout -->
         <div class="row">
           <h2 class="underline my-3">Août</h2>
-          <div class="col col-md-4 col-xl-2">
+          <div class="col col-xl-3 mt-3 mt-sm-0">
             <div class="card">
               <img
                 class="card-img-top p-1"
-                src="img/rochefort.jpg"
+                src="img/nice.jpg"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Golf Bluegreen Rochefort-océan</h5>
+                <h5 class="card-title">Nice Country Club</h5>
                 <ul class="list-unstyled">
-                  <li><img src="img/calendar-icon.svg" alt="" /> 15/06/2021</li>
+                  <li><img src="img/calendar-icon.svg" alt="" /> 10/08/2021</li>
                   <li>
                     <img src="img/target.svg" alt="Target" />
-                    Compétition de classement
+                    Classement
+                  </li>
+                  <li>
+                    <img src="img/position.svg" alt="Target" />
+                    <a
+                      href="https://goo.gl/maps/RYjfw8TkFUtUmYW1A"
+                      target="_blank"
+                      >Localiser
+                    </a>
                   </li>
                 </ul>
-                <a href="#" class="btn btn-primary">Réserver</a>
+                <button class="btn btn-primary">Réserver</button>
               </div>
             </div>
           </div>
-          <div class="col col-md-4 col-xl-2">
+          <div class="col col-xl-3 mt-3 mt-sm-0">
             <div class="card">
               <img
                 class="card-img-top p-1"
-                src="img/rochefort.jpg"
+                src="img/paris.jpg"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Golf de la Prée - Marsilly</h5>
+                <h5 class="card-title">Paris Longchamp</h5>
                 <ul class="list-unstyled">
-                  <li><img src="img/calendar-icon.svg" alt="" /> 15/06/2021</li>
+                  <li><img src="img/calendar-icon.svg" alt="" /> 19/08/2021</li>
                   <li>
                     <img src="img/target.svg" alt="Target" />
-                    Compétition de classement
+                    Classement
+                  </li>
+                  <li>
+                    <img src="img/position.svg" alt="Target" />
+                    <a
+                      href="https://g.page/golfparislongchamp?share"
+                      target="_blank"
+                      >Localiser
+                    </a>
                   </li>
                 </ul>
                 <a href="#" class="btn btn-secondary disabled">Complet</a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <h2 class="underline my-3">Septembre</h2>
-          <div class="col col-md-4 col-xl-2">
+          <div class="col col-xl-3 mt-3 mt-sm-0">
             <div class="card">
               <img
                 class="card-img-top p-1"
-                src="img/rochefort.jpg"
+                src="img/bretagne.jpg"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Golf Bluegreen Rochefort-océan</h5>
+                <h5 class="card-title">Cornouaille</h5>
                 <ul class="list-unstyled">
-                  <li><img src="img/calendar-icon.svg" alt="" /> 15/06/2021</li>
+                  <li><img src="img/calendar-icon.svg" alt="" /> 28/08/2021</li>
                   <li>
-                    <img src="img/target.svg" alt="Target" />
-                    Compétition de classement
+                    <img src="img/loisir.svg" alt="Target" />
+                    Loisir
+                  </li>
+                  <li>
+                    <img src="img/position.svg" alt="Target" />
+                    <a
+                      href="https://g.page/golfdecornouaille?share"
+                      target="_blank"
+                      >Localiser
+                    </a>
                   </li>
                 </ul>
                 <a href="#" class="btn btn-primary">Réserver</a>
-              </div>
-            </div>
-          </div>
-          <div class="col col-md-4 col-xl-2">
-            <div class="card">
-              <img
-                class="card-img-top p-1"
-                src="img/rochefort.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Golf de la Prée - Marsilly</h5>
-                <ul class="list-unstyled">
-                  <li><img src="img/calendar-icon.svg" alt="" /> 15/06/2021</li>
-                  <li>
-                    <img src="img/target.svg" alt="Target" />
-                    Compétition de classement
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-secondary disabled">Complet</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer  -->
 
     <footer class="container-fluid footer d-flex justify-content-evenly mt-3">
       <ul class="list-unstyled">
@@ -283,6 +407,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- Scripts Jquery et JS -->
+
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
   </body>
