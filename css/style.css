@@ -1,16 +1,23 @@
+/********** Global text font **********/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 
-body {
-  background: rgb(230, 230, 230);
-}
+/********** Header title font **********/
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 
 * {
   font-family: "Josefin Sans", sans-serif;
 }
 
-/********** HEADER **********/
+/********** Background **********/
+body {
+  background-image: url(../img/body-background.jpg);
+  background-attachment: fixed;
+}
 
+.body-background {
+  background: rgb(230, 230, 230, 0.7);
+}
+/********** Header **********/
 .header {
   background: lightgray;
 }
@@ -21,11 +28,11 @@ body {
   color: green;
 }
 
+/********** Navlinks **********/
 .menu a {
   margin: 0 5px;
   border: 1px solid black;
   border-radius: 5px;
-  color: black;
 }
 
 .menu a:hover {
@@ -34,15 +41,15 @@ body {
   color: black;
 }
 
-/********** BODY **********/
-
+/********** First section background **********/
 .section1 {
   position: relative;
   background-image: url(../img/mainpage2.jpg);
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
 }
 
+/********** Text **********/
 .introduction {
   color: white;
   font-size: 2rem;
@@ -54,31 +61,26 @@ body {
   justify-content: center;
 }
 
-.adresse {
-  display: inline-block;
-  border: 1px solid green;
-  margin-top: 1rem;
-  padding: 1rem;
-}
-
-.adresse h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 .basic-text {
   font-size: 1.2rem;
 }
 
-.footer {
-  background: lightgray;
-  padding-top: 1rem;
+.basic-text-bolder {
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .title-md {
   margin: 2rem 0;
 }
 
+/********** Underline shadow **********/
 .underline {
   box-shadow: 0 4px 3px -3px gray;
+}
+
+/********** Footer **********/
+.footer {
+  background: lightgray;
+  padding-top: 1rem;
 }
